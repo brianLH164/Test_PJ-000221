@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version Information</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .version-info {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+            .header {
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Version Info.</h1>
+    </div>
+    <div class="container">
+        <h1>Version Information</h1>
+        <p class="version-info">Version: 0.4.3 (Build 20072024a)</p>
+        <p class="version-info">Python Version: 3.12</p>
+        <p class="version-info">Flask Version: 3.0.3</p>
+        <p class="version-info">SQLite Version: 3.43.1</p>
+    </div>
+</body>
+</html>

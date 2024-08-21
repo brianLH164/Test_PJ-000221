@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .warning {
+            background-color: #ffdddd;
+            color: #ff0000;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .content {
+            margin: 20px;
+        }
+        
+        .footer {
+            background-color: #f5f5f5;
+            color: #000;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            font-size: 10px;
+            text-align: left;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        
+        .footer a {
+            color: blue;
+            text-decoration: none;
+        }
+        
+        .flask-logo {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 20px;
+            max-height: 20px;
+            margin-right: 5px; /* Adjust this value to create space between the logo and the text */
+        }
+    </style>
+</head>
+<body>
+    <div class="warning">
+        <p>WARNING: This is a development server.</p>
+    </div>
+    
+    <div class="header">
+        <h1>Welcome to www.niggerbaby.com</h1>
+    </div>
+    
+    <div class="content">
+        <ul>
+            <li>
+                <img src="/static/img/DNS.png" alt="" width="25" height="25">
+                <a href="/page1">DNS record</a>
+            </li>
+            <li>
+                <img src="/static/img/Save.png" alt="" width="25" height="25">
+                <a href="/page2">Save texts</a>
+            </li>
+            <li>
+                <img src="/static/img/Review.jpeg" alt="" width="25" height="25">
+                <a href="/page3">Review saved texts</a>
+            </li>
+            <li>
+                <img src="/static/img/upload.jpg" alt="" width="25" height="25">
+                <a href="/upload">Upload file to Server</a>
+            </li>
+            <li>
+                <img src="/static/img/remove.png" alt="" width="25" height="25">
+                <a href="/clearupdatabase">Clear database</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="footer">
+        <a href="/login">Admin Login</a>
+        <span style="margin-left: 10px;">|</span>
+        This program leverages the Domain Service provided by Cloudflare and is built using Python 3.12 with the Flask framework.
+        <a href="/version" class="version-info">version info.</a>
+        <img src="/static/img/flask-horizontal.png" alt="" class="flask-logo">
+  
+        <span style="margin-left: 5px;">|</span>
+        <a href="/Storage">Storage Server</a>
+    </div>
+</body>
+</html>

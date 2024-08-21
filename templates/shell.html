@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shell Page</title>
+</head>
+<body>
+    <h1>Shell Page</h1>
+    <form method="POST" action="/shell">
+        <input type="text" name="command" placeholder="Enter command" required>
+        <button type="submit">Run</button>
+    </form>
+    {% if result %}
+        <pre>{{ result }}</pre>
+    {% endif %}
+</body>
+</html>

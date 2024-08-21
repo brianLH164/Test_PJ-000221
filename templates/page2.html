@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <div class="header">
+        <h2>Save text</h2>
+    </div>
+    <title>Page 2</title>
+</head>
+<body>
+    <h1>Save Text</h1>
+    <form method="POST">
+        <label for="Text">Text:</label>
+        <input type="text" name="Text" id="Text">
+        <button type="submit">Save</button>
+    </form>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+    <p><a href="/">Return to Home Page</a></p>
+</body>
+</html>
+<style>
+    .header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    h2 {
+                    color: #fff;
+        font-size: 24px;
+        margin: 0 0 20px;
+    }
+</style>
+

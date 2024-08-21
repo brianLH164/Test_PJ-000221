@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    h2 {
+                    color: #fff;
+        font-size: 24px;
+        margin: 0 0 20px;
+    }
+</style>
+
+<head>
+    <div class="header">
+        <h2>Review Text</h2>
+    </div>
+    <title>Page 3</title>
+</head>
+<body>
+    <h1>Saved Texts</h1>
+    <ul>
+        {% for text in texts %}
+        <li>{{ text }}</li>
+        {% endfor %}
+    </ul>
+    {% if not texts %}
+    <p>No saved texts found.</p>
+    {% endif %}
+    <p><a href="/">Return to Home Page</a></p>
+</body>
+</html>
+
+

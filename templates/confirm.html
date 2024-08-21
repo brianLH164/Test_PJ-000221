@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comfirm Database Clearing</title>
+</head>
+<body>
+    <div class="header">
+        <h2>Cleanup database</h2>
+    </div>
+    <h1>Comfirm Database Clearing</h1>
+    <p>Are you sure you want to clear the database? This action cannot be undone.</p>
+    <form method="post" action="/clearupdatabase/confirm">
+        <button type="submit" name="confirm" value="Yes">Yes</button>
+        <button type="submit" name="confirm" value="No">No</button>
+    </form>
+</body>
+</html>
+<style>
+    .header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    h2 {
+                    color: #fff;
+        font-size: 24px;
+        margin: 0 0 20px;
+    }
+</style>
+
