@@ -7,18 +7,6 @@ import sys
 
 app = Flask(__name__)
 
-class HTTPMiddleware:
-    def __init__(self, app):
-        self.app = app
-
-    def __call__(self, environ, start_response):
-        if environ.get('HTTPS') == 'on':
-            url = request.url.replace('https://', 'http://', 1)
-            return redirect(url)
-
-        return self.app(environ, start_response)
-app.wsgi_app = HTTPMiddleware(app.wsgi_app)
-
 def initialize_database():
     conn = sqlite3.connect('texts.db')
     c = conn.cursor()
